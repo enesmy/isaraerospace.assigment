@@ -2,6 +2,7 @@
 using isaraerospace.assigment.entities;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -30,7 +31,7 @@ namespace isaraerospace.assigment.winform.Forms
         private void LoadGrid()
         {
 
-
+            dgvBooks.DataSource = new List<Book>();
             dgvBooks.DataSource = factory.Books.GetAll();
 
             dgvBooks.SetMaterialDesign();
@@ -65,6 +66,7 @@ namespace isaraerospace.assigment.winform.Forms
                     LoadGrid();
                 }
             }
+            
 
         }
 

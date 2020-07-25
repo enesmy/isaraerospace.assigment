@@ -42,6 +42,10 @@ namespace isaraerospace.assigment.winform
                     {
                         row.DefaultCellStyle.BackColor = Color.Yellow;
                     }
+                    else
+                    {
+                        row.DefaultCellStyle = new DataGridViewCellStyle();
+                    }
 
                     decimal price = (decimal)row.Cells[PriceColumnIndex].Value;
 
