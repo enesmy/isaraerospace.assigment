@@ -52,10 +52,7 @@ namespace isaraerospace.assigment.dal.Concrete
 
         public void Remove(T obj)
         {
-           mng.LoadAll();
-
             mng.LastLoad.Remove(obj);
-
         }
 
 
