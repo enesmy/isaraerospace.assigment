@@ -36,12 +36,12 @@ namespace isaraerospace.assigment.winform
             int InStockColumnIndex = dgv.GetColumnIndex("InStock");
             int PriceColumnIndex = dgv.GetColumnIndex("Price");
             if (InStockColumnIndex != -1)
-                foreach (DataGridViewRow row in dgv.Rows)
+                foreach (DataGridViewRow row in dgv.Rows)   
                 {
                     if (row.Cells[InStockColumnIndex].Value != null && row.Cells[InStockColumnIndex].Value.ToString() == "no")
                     {
                         row.DefaultCellStyle.BackColor = Color.Yellow;
-                    }
+                    }   
                     else
                     {
                         row.DefaultCellStyle = new DataGridViewCellStyle();
